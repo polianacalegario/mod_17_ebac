@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carousel com Bootstrap e JavaScript</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #FDE5D0; /* Fundo laranja claro */
+    }
+
+    .header {
+      background-color: #000000; /* Cor de fundo do header preto */
+      color: #FFFFFF; /* Cor do texto do header branco */
+      padding: 10px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #000000; /* Cor de fundo do footer preto */
+      color: #FFFFFF; /* Cor do texto do footer branco */
+      padding: 10px;
+      text-align: center;
+    }
+
+    .carousel-item img {
+      max-width: 150%; /* Diminui o tamanho das imagens */
+      height: auto;
+      margin: 0 auto; /* Centraliza horizontalmente */
+      display: block; /* Remove margens verticais adicionais */
+    
+    }
+
+    .cadastro-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>DESENVOLVIDO POR POLIANA</h1>
+  </div>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/rosas.jpg" alt="Rosas">
+      </div>
+      <div class="carousel-item">
+        <img src="image/nuven.jpg" alt="Nuvem">
+      </div>
+      <div class="carousel-item">
+        <img src="image/montanha.jpg" alt="Montanha">
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="cadastro-form">
+      <h2>Cadastro</h2>
+      <form>
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" id="nome" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="bairro">Bairro</label>
+          <input type="text" class="form-control" id="bairro" required>
+        </div>
+        <div class="form-group">
+          <label for="complemento">Complemento</label>
+          <input type="text" class="form-control" id="complemento" required>
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" class="form-control" id="telefone" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>DESENVOLVIDO POR POLIANA</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
